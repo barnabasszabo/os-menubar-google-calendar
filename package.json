@@ -1,0 +1,35 @@
+{
+  "name": "google-calendar-os-menubar",
+  "version": "1.0.0",
+  "main": "main.js",
+  "private": true,
+  "build": {
+    "appId": "hu.szabobarnabas.google-calendar-os-menubar",
+    "productName": "Google Calendar Menubar",
+    "mac": {
+      "category": "public.app-category.developer-tools"
+    },
+    "dmg": {
+      "icon": false
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Development"
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder --mac --windows --linux --publish always ",
+    "release": "electron-builder --mac --windows --linux --publish always"
+  },
+  "devDependencies": {
+    "electron": "^11.0.3",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "menubar": "^9.0.1"
+  }
+}
