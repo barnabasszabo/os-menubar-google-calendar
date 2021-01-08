@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "main.js",
   "private": true,
+  "homepage": "http://szabobarnabas.hu",
+  "author": {
+    "name": "Barnabas Szabo",
+    "email": "git@szabobarnabas.hu"
+  },
   "build": {
     "appId": "hu.szabobarnabas.google-calendar-os-menubar",
     "productName": "Google Calendar Menubar",
@@ -22,8 +27,8 @@
   "scripts": {
     "start": "electron .",
     "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder --mac --windows --linux --publish always ",
-    "release": "electron-builder --mac --windows --linux --publish always"
+    "build": "electron-builder --publish always ",
+    "release": "npm run build"
   },
   "devDependencies": {
     "electron": "^11.0.3",
