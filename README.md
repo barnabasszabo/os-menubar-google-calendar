@@ -1,3 +1,4 @@
+# What is this project
 Display Google calendar in your OS traybar. No need to search it in your browser again, just easily open it from your trayBar.
 
 ## How to install
